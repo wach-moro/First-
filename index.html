@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top 10 Futuristic Hospitals in the World</title>
   
-  <!-- Permanent Open Graph Tags for Facebook & WhatsApp -->
+  <!-- Open Graph Meta Tags (For Clean Facebook & WhatsApp Preview) -->
   <meta property="og:site_name" content="Job Yachive">
   <meta property="og:title" content="Top 10 Futuristic Hospitals in the World">
   <meta property="og:description" content="Discover the most advanced and futuristic hospitals shaping the future of global healthcare.">
@@ -20,9 +20,6 @@
   <meta name="twitter:title" content="Top 10 Futuristic Hospitals in the World">
   <meta name="twitter:description" content="Discover the most advanced and futuristic hospitals shaping the future of global healthcare.">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/wach-moro/First-/main/InShot_20260919_002009567.jpg">
-
-  <!-- Instant Redirect to your Blog -->
-  <meta http-equiv="refresh" content="2;url=https://blog.jobyachive.com/top-10-futuristic-hospitals-in-world/?utm_source=Facebook&utm_medium=Bridge">
 
   <style>
     body {
@@ -66,13 +63,29 @@
     }
     .btn:hover { background: #16a34a; }
   </style>
+
+  <!-- Smart Redirect Script (Bots ko rokta hai, real users ko bhejta hai) -->
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Check if the visitor is a search bot or social crawler
+      var userAgent = navigator.userAgent.toLowerCase();
+      var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(userAgent);
+      
+      if (!isBot) {
+        // Agar real user hai toh 1.5 second baad blog par bhej do
+        setTimeout(function() {
+          window.location.href = "https://blog.jobyachive.com/top-10-futuristic-hospitals-in-the-world/?utm_source=Facebook&utm_medium=SafeBridge";
+        }, 1500);
+      }
+    });
+  </script>
 </head>
 <body>
   <div class="card">
     <img src="https://raw.githubusercontent.com/wach-moro/First-/main/InShot_20260919_002009567.jpg" alt="Preview">
     <h2>Top 10 Futuristic Hospitals in the World</h2>
     <p>Discover the most advanced and futuristic hospitals shaping the future of global healthcare.</p>
-    <a href="https://blog.jobyachive.com/top-10-futuristic-hospitals-in-world/?utm_source=Facebook&utm_medium=Bridge" class="btn">Tap Here to Continue</a>
+    <a href="https://blog.jobyachive.com/top-10-futuristic-hospitals-in-the-world/?utm_source=Facebook&utm_medium=SafeBridge" class="btn">Tap Here to Continue</a>
   </div>
 </body>
 </html>
